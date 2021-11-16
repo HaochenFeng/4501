@@ -1,4 +1,5 @@
 class Portfolio:
+
     def __inif__(self):
         self.stocks = {} 
 
@@ -6,11 +7,13 @@ class Portfolio:
         stock = {"name": name, "shares": shares, "price": price}
         self.stocks[name] = stock
 
-    def cost(self, name):
-        stock = self.stocks[name]
-        shares = stock["shares"]
-        price = stock["price"]
-        cost = shares * price
+    def cost(self):
+        cost = 0
+        for stock in stocks:
+            stock = self.stocks[name]
+            shares = stock["shares"]
+            price = stock["price"]
+            cost = cost + shares * price
         return cost
 
 """
