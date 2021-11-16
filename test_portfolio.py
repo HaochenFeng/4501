@@ -18,11 +18,15 @@ def test_buy_two_stock():
 
 def test_not_enough_argument_to_buy():
     p = Portfolio()
-    
+    with pytest.raises(TypeError):
+        p.buy('IBM')
+
+    """
     try:
         p.buy("IBM")
     except TypeError:
         pass
     else:
-        assert False
+        assert False, "didnt get an exception"
+    """
     
