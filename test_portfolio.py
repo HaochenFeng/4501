@@ -1,5 +1,6 @@
 # test_portfolio.py
 from Portfolio import Portfolio
+import pytest
 
 def test_empty_portfolio():
     p = Portfolio()
