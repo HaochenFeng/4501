@@ -1,5 +1,5 @@
 # test_portfolio.py
-from portfolio import Portfolio
+from Portfolio import Portfolio
 
 p = Portfolio()
 print(f"Empty portfolio cost: {p.cost()}, should be 0.0")
