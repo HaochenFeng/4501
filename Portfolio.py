@@ -12,5 +12,5 @@ class Portfolio:
         for stock in self._stocks.values():
             shares = stock["shares"]
             price = stock["price"]
-            cost = cost - shares * price
+            cost = cost + shares * price
         return cost
