@@ -1,5 +1,6 @@
 # test_portfolio.py
 from Portfolio import Portfolio
+from Portfolio import Shares
 import pytest
 
 def test_empty_portfolio():
