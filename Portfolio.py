@@ -4,8 +4,6 @@ class Shares:
         self.number = number
         self.price = price
 
-
-
 class Portfolio:
 
     def __init__(self):
