@@ -22,7 +22,7 @@ def test_buy_two_stock():
     assert p.cost() == 21263.0
 
 def test_not_enough_argument_to_buy():
-    p = Portfolio()
+    p = Portfolio("HPQ", 100, 36.15)
     with pytest.raises(TypeError):
         p.buy('IBM')
 
