@@ -9,7 +9,7 @@ class Portfolio:
 
     def cost(self):
         cost = 0
-        for stock in self._stocks:
+        for stock in self._stocks.values():
             shares = stock["shares"]
             price = stock["price"]
             cost = cost + shares * price
