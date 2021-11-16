@@ -8,14 +8,14 @@ def test_empty_portfolio():
 
 def test_buy_one_stock():
     p = Portfolio()
-    ibm = Share("IBM", 100, 176.48)
+    ibm = Shares("IBM", 100, 176.48)
     p.buy(ibm)
     assert p.cost() == 17648.0
 
 def test_buy_two_stock():
     p = Portfolio()
-    ibm = Share("IBM", 100, 176.48)
-    hpq = Share("HPQ", 100, 36.15)
+    ibm = Shares("IBM", 100, 176.48)
+    hpq = Shares("HPQ", 100, 36.15)
     p.buy(ibm)
     p.buy(hpq)
     assert p.cost() == 21263.0
