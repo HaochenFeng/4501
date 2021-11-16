@@ -1,6 +1,6 @@
 class Portfolio:
 
-    def __inif__(self):
+    def __init__(self):
         self._stocks = {} 
 
     def buy(self, name, shares, price):
